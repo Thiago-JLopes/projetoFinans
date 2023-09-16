@@ -7,7 +7,7 @@
 
       <!--Menu hambuger-->
       <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
-        <span class="navbar-toggler-icon"></span>
+        <font-awesome-icon icon-class="fa-solid fa-bars" beat style="color: #185f0d;" />
       </button>
 
       <div class="collapse navbar-collapse justify-content-between" id="menu">
@@ -38,7 +38,11 @@
 </template>
 
 <script>
+import FontAwesomeIcon from './FontAwesomeIcon.vue';
 export default {
   name: "BarraNavegacao",
+  components: {
+    FontAwesomeIcon
+  }
 };
 </script>
