@@ -13,7 +13,7 @@
       <div class="collapse navbar-collapse justify-content-between" id="menu">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a href="" class="nav-link">Home</a>
+            <a href="" class="nav-link">Quem somos</a>
           </li>
 
           <li class="nav-item">
@@ -21,11 +21,11 @@
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">Benefícios</a>
+            <a href="" class="nav-link">Planos e preços</a>
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">Preços</a>
+            <a href="" class="nav-link">Blog</a>
           </li>
 
           <li class="nav-item">
