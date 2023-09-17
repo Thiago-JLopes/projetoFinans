@@ -5,7 +5,7 @@
         <div class="col-md-6">
           <img :src="path" :alt="title || 'Image Description'" class="img-fluid"/>
         </div>
-        
+
         <div class="col-md-6 d-flex">
           <div class="align-self-center" style="text-align: left;">
             <h2 v-if="title">{{ title }}</h2>
@@ -19,7 +19,7 @@
   
   <script>
       export default {
-          name: "CardTipo1",
+          name: "CardTipo2",
           props: {
               title: String,
               texto: String,
