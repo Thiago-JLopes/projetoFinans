@@ -17,7 +17,7 @@
                             <input type="text" name="Novoregistro" placeholder="Seu email" class="form-control">
 
                             <div class="input-group-append input-group-lg">
-                                <button type="button" class="btn btn-primary">Cadastre-se</button>
+                                <button type="button" class="btn btn-primary" onclick="goToRegistro">Cadastre-se</button>
                             </div>
                         </div>
                     </form>
@@ -89,6 +89,10 @@ export default {
   methods: {
         ImagePath(caminho) {
             return require(`../assets/${caminho}`);
+        },
+        goToRegistro() {
+            let email = this.$refs.emailInput.value;
+            this.$router.push({name: 'Register', query: {email: email}});
         }
     }
 };
