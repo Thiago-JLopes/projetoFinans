@@ -10,10 +10,4 @@ Para conhecer mais sobre a Stemis acesse o nosso [site](https://www.stemis.com.b
 
 Para ficar informado sobre futuros processos seletivos, siga a gente no Instagram [@stemis.tec](https://www.instagram.com/stemis.tec)
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
