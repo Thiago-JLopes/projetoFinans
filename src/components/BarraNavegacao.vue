@@ -17,25 +17,25 @@
           </li>
 
           <li class="nav-item">
-            <a href="QuemSomos.vue" class="nav-link">Recursos</a>
+            <router-link to="/QuemSomos" class="nav-link">Recursos</router-link>
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">Planos e preços</a>
+            <router-link to="/QuemSomos" class="nav-link">Planos e preços</router-link>
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">Blog</a>
+            <router-link to="/QuemSomos" class="nav-link">Blog</router-link>
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">Contato</a>
+            <router-link to="/QuemSomos" class="nav-link">Contato</router-link>
           </li>
         </ul>
 
         <div class="login-registro">
-          <button type="button" class="btn btn-warning" style="color: #fff;">Login</button>
-          <button type="button" class="btn btn-primary">Cadastre-se</button>
+          <button type="button" class="btn btn-warning " @click="realizarLogin" style="color: #fff;">Login</button>
+          <button type="button" class="btn btn-primary" @click="realizarRegistro">Cadastre-se</button>
         </div>
       </div>
     </div>
@@ -43,11 +43,20 @@
 </template>
 
 <script>
+import router from '@/router';
 import FontAwesomeIcon from './FontAwesomeIcon.vue';
 export default {
   name: "BarraNavegacao",
   components: {
     FontAwesomeIcon
+  },
+  methods: {
+    realizarLogin() {
+      router.push('/login');
+    },
+    realizarRegistro() {
+      router.push('/registro');
+    }
   }
 };
 </script>
