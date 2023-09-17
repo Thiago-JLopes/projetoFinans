@@ -1,5 +1,5 @@
 <template>
-    <CardForm heading="Registrar-se" isRegistration />
+    <CardForm :email="email" heading="Registrar-se" isRegistration />
  </template>
  
  <script>
@@ -7,6 +7,19 @@
  
      export default {
      name: 'RegistroView',
-     components: { CardForm }
+     components: { CardForm },
+
+    mounted() {
+        if (this.$route.query.email) {
+            this.email = this.$route.query.email;
+        }
+    },
+    
+    data() {
+        return {
+            email: ''
+        };
+    }
+
  }
  </script>

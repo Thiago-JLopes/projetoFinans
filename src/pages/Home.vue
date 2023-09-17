@@ -14,10 +14,10 @@
 
                     <form class="mt-4 mb-4" action="">
                         <div class="input-group input-group-lg">
-                            <input type="text" name="Novoregistro" placeholder="Seu email" class="form-control">
+                            <input type="text" name="Novoregistro" placeholder="Seu email" class="form-control" ref="emailInput">
 
                             <div class="input-group-append input-group-lg">
-                                <button type="button" class="btn btn-primary" onclick="goToRegistro">Cadastre-se</button>
+                                <button type="button" class="btn btn-primary" @click="goToRegistro">Cadastre-se</button>
                             </div>
                         </div>
                     </form>
@@ -91,9 +91,17 @@ export default {
             return require(`../assets/${caminho}`);
         },
         goToRegistro() {
-            let email = this.$refs.emailInput.value;
-            this.$router.push({name: 'Register', query: {email: email}});
+            this.$nextTick(() => {
+                if(this.$refs.emailInput) {
+                    let email = this.$refs.emailInput.value;
+                    this.$router.push({name: 'RegistroView', query: {email: email}});
+                } 
+                else {
+                    console.error("emailInput ref not found!");
+                }
+            });
         }
+
     }
 };
 </script>
