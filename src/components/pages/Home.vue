@@ -47,7 +47,7 @@
   </section><!--Fim sessao saiba-->
 
   <section class="caixa">
-    <CardTipo2></CardTipo2>
+    <CardTipo2 title="Pare de pagar juros e economize" texto="Manter as contas em dia é sempre um problema? O Finans avisa você: receba alertas de contas a pagar e a receber!" :path="ImagePath('juros.png')"></CardTipo2>
   </section>
 </template>
 
