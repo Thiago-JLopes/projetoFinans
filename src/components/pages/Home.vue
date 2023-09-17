@@ -4,7 +4,7 @@
   </header>
 
  
-  <section id="home">  <!--Início sessão-->
+  <section id="home" class="caixa">  <!--Início sessão home-->
     <div class="container">
         <div class="row">
             <div class="col-md-6 d-flex">
@@ -40,17 +40,28 @@
             </div>
         </div>
     </div>
-  </section>
+  </section> <!--Fim sessão home-->
+
+  <section class="caixa"><!--Inicio sessao saiba-->
+    <CardTipo1 title="Saiba para onde vai o seu dinheiro" texto="Com o finans, você categoriza todos os seus lançamentos. Com gráficos simples, você sabe onde vem e para onde vai o seu dinheiro." :path="ImagePath('saiba.png')"/>
+  </section><!--Fim sessao saiba-->
 </template>
 
 <script>
 import BarraNavegacao from "../BarraNavegacao.vue";
+import CardTipo1 from "../CardTipo1.vue";
 
 export default {
   name: "HomePage",
   components: {
-    BarraNavegacao
+    BarraNavegacao,
+    CardTipo1
   },
+  methods: {
+        ImagePath(caminho) {
+            return require(`../../assets/${caminho}`);
+        }
+    }
 };
 </script>
 
@@ -62,5 +73,10 @@ export default {
 
     .btn-outline-light {
         margin: 2px;
+    }
+
+    .caixa {
+        padding: 60px 0;
+        border-bottom: 1px solid #e5e5e5;
     }
 </style>
