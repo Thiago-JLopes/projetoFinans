@@ -1,5 +1,5 @@
 <template>
-    <img :src="path" :alt="title || 'Image Description'" class="img-fluid"/>
+    <img :src="path" :alt="title || ''" class="img-fluid"/>
     <div class="align-self-center" style="text-align: left;">
         <h2 v-if="title">{{ title }}</h2>
         <p v-if="texto">{{ texto }}</p>
