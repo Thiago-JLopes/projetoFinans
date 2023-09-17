@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-light bg-warning">
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
     <div class="container">
       <a href="#">
         <img src="../assets/logoFinans.png" alt="logoNavBar" width="142" />
@@ -13,11 +13,11 @@
       <div class="collapse navbar-collapse justify-content-between" id="menu">
         <ul class="navbar-nav mx-auto menu">
           <li class="nav-item">
-            <a href="" class="nav-link">Quem somos</a>
+            <router-link to="/QuemSomos" class="nav-link">Quem somos</router-link>
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">Recursos</a>
+            <a href="QuemSomos.vue" class="nav-link">Recursos</a>
           </li>
 
           <li class="nav-item">
@@ -32,6 +32,11 @@
             <a href="" class="nav-link">Contato</a>
           </li>
         </ul>
+
+        <div class="login-registro">
+          <button type="button" class="btn btn-warning" style="color: #fff;">Login</button>
+          <button type="button" class="btn btn-primary">Cadastre-se</button>
+        </div>
       </div>
     </div>
   </nav>
@@ -51,5 +56,10 @@ export default {
   .menu a {
     color: white;
     font-size: 1.2em;
+  }
+
+  .login-registro button{
+    margin-left: 2px;
+    font-size: 1.0em;
   }
 </style>

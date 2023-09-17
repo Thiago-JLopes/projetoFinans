@@ -36,7 +36,7 @@
             </div>
 
             <div class="col-md-6 d-none d-md-block">
-                <img src="../../assets/capa-mulher.png" alt="">
+                <img src="../assets/capa-mulher.png" alt="">
             </div>
         </div>
     </div>
@@ -67,16 +67,15 @@
         </div>
     </div>
   </section>
-
   <Rodape/>
 </template>
 
 <script>
-import BarraNavegacao from "../BarraNavegacao.vue";
-import CardTipo1 from "../cards/CardTipo1.vue";
-import CardTipo2 from "../cards/CardTipo2.vue";
-import CardTipo3 from "../cards/CardTipo3.vue";
-import Rodape from "../Rodape.vue";
+import BarraNavegacao from '../components/BarraNavegacao.vue'
+import CardTipo1 from '../components/CardTipo1.vue'
+import CardTipo2 from '../components/CardTipo2.vue'
+import CardTipo3 from '../components/CardTipo3.vue'
+import Rodape from '../components/Rodape.vue'
 
 export default {
   name: "HomePage",
@@ -86,11 +85,10 @@ export default {
     CardTipo2,
     CardTipo3,
     Rodape
-    
   },
   methods: {
         ImagePath(caminho) {
-            return require(`../../assets/${caminho}`);
+            return require(`../assets/${caminho}`);
         }
     }
 };
