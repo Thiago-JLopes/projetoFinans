@@ -45,17 +45,23 @@
   <section class="caixa"><!--Inicio sessao saiba-->
     <CardTipo1 title="Saiba para onde vai o seu dinheiro" texto="Com o finans, você categoriza todos os seus lançamentos. Com gráficos simples, você sabe onde vem e para onde vai o seu dinheiro." :path="ImagePath('saiba.png')"/>
   </section><!--Fim sessao saiba-->
+
+  <section class="caixa">
+    <CardTipo2></CardTipo2>
+  </section>
 </template>
 
 <script>
 import BarraNavegacao from "../BarraNavegacao.vue";
-import CardTipo1 from "../CardTipo1.vue";
+import CardTipo1 from "../cards/CardTipo1.vue";
+import CardTipo2 from "../cards/CardTipo2.vue";
 
 export default {
   name: "HomePage",
   components: {
     BarraNavegacao,
-    CardTipo1
+    CardTipo1,
+    CardTipo2
   },
   methods: {
         ImagePath(caminho) {
