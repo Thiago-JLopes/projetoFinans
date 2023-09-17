@@ -7,11 +7,11 @@
 
       <!--Menu hambuger-->
       <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
-        <font-awesome-icon icon-class="fa-solid fa-bars" beat style="color: #185f0d;" />
+        <font-awesome-icon icon-class="fa-solid fa-bars" beat style="color: #ffffff;" />
       </button>
 
       <div class="collapse navbar-collapse justify-content-between" id="menu">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav mx-auto menu">
           <li class="nav-item">
             <a href="" class="nav-link">Quem somos</a>
           </li>
@@ -46,3 +46,10 @@ export default {
   }
 };
 </script>
+
+<style>
+  .menu a {
+    color: white;
+    font-size: 1.2em;
+  }
+</style>

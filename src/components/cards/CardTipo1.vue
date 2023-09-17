@@ -9,7 +9,7 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 d-none d-md-block">
         <img :src="path" :alt="title || 'Image Description'" class="img-fluid"/>
       </div>
     </div>

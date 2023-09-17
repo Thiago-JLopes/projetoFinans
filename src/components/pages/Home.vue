@@ -46,11 +46,11 @@
     <CardTipo1 title="Saiba para onde vai o seu dinheiro" texto="Com o finans, você categoriza todos os seus lançamentos. Com gráficos simples, você sabe onde vem e para onde vai o seu dinheiro." :path="ImagePath('saiba.png')"/>
   </section><!--Fim sessao saiba-->
 
-  <section class="caixa"><!--Inicio sessao juros-->
+  <section class="caixa"><!--Inicio sessao recursos-->
     <CardTipo2 title="Pare de pagar juros e economize" texto="Manter as contas em dia é sempre um problema? O Finans avisa você: receba alertas de contas a pagar e a receber!" :path="ImagePath('juros.png')"></CardTipo2>
-  </section><!--Fim sessao juros-->
+  </section><!--Fim sessao recursos-->
 
-  <section>
+  <section class="caixa"> <!--Inicio sessão-->
     <div class="container">
         <div class="row">
             <div class="col-md-4"><!--Card1-->
@@ -67,6 +67,8 @@
         </div>
     </div>
   </section>
+
+  <Rodape/>
 </template>
 
 <script>
@@ -74,6 +76,7 @@ import BarraNavegacao from "../BarraNavegacao.vue";
 import CardTipo1 from "../cards/CardTipo1.vue";
 import CardTipo2 from "../cards/CardTipo2.vue";
 import CardTipo3 from "../cards/CardTipo3.vue";
+import Rodape from "../Rodape.vue";
 
 export default {
   name: "HomePage",
@@ -81,7 +84,8 @@ export default {
     BarraNavegacao,
     CardTipo1,
     CardTipo2,
-    CardTipo3
+    CardTipo3,
+    Rodape
     
   },
   methods: {
@@ -105,5 +109,6 @@ export default {
     .caixa {
         padding: 60px 0;
         border-bottom: 1px solid #e5e5e5;
+        background: #ecebeb;
     }
 </style>
